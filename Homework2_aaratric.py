@@ -67,7 +67,7 @@ with open(source_path, 'rt', encoding='utf-8') as source:
                 type81_Result.append([futures_code, contract_mon, contract_type, strike_price, settlement_price])
         #writing the first table  of type B records           
         destination.write(tabulate(typeB_Result, headers=['Futures\nCode','Contract\nMonth','Contract\nType','Futures\nExp Date',
-                            'Options\nCode','Options\nExp Date']))
+                            'Options\nCode','Options\nExp Date'],floatfmt="0.2f"))
         
         destination.write("\n")
         #writing the second table of type 81 records
